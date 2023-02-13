@@ -40,7 +40,7 @@ kanji=[]
 hiragana=[]
 inputstr=input("文章を入力してください:")
 newstr = ''.join(filter(str.isalnum, inputstr)) 
-for word in bunsetsuWakachi(inputstr):
+for word in bunsetsuWakachi(newstr):
     kanji.append(word)
     hiragana.append(conv.do(word))
 
